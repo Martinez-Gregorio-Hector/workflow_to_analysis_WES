@@ -4,9 +4,11 @@ This is a tutorial to analysis whole-exome-sequencing (WES), in the directory /b
 
 1. Alignment
 
-To analyze WES, we need to alignment the reads (fastqc) using bwa, you can download this program in https://github.com/lh3/bwa. The script is in the bin file Alignment
+To analyze WES, we need to alignment the reads (fastqc) using bwa, you can download this program in https://github.com/lh3/bwa. The script is in the bin file "Alignment"
 
 2. Preprocesing GATK
+
+Before calling variant, the reads alignment are processing with GATK to sort reads, mark reads duplicates and recalibrate the bases, once done this, the bam is ready to call variantes. To this section the script in in the bam file "preprocesing_GATK"
 
 
 3. Calling Variant with Mutect2
