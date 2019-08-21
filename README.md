@@ -4,6 +4,7 @@ This is a tutorial to analysis whole-exome-sequencing (WES), in the directory /b
 
 1. Alignment
 
+To analyze WES, we need to alignment the reads (fastqc) using bwa, you can download this program in https://github.com/lh3/bwa. The script is in the bin file Alignment
 
 2. Preprocesing GATK
 
