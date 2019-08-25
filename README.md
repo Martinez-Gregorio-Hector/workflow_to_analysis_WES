@@ -104,9 +104,8 @@ LB      library number (can have multiple libraries for a given individual)
   
   4. **_Somatic Variant Calling - SNV_**
   
-  see [**/bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin). More information in [**/GATK4 Mutect2**](https://gatkforums.broadinstitute.org/gatk/discussion/11136/how-to-call-somatic-mutations-using-gatk4-mutect2-deprecated)
+  see [**/bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin), more information in [**/GATK4 Mutect2**](https://gatkforums.broadinstitute.org/gatk/discussion/11136/how-to-call-somatic-mutations-using-gatk4-mutect2-deprecated)
   
-  GATK4 contains Mutect2
   
   5. **_Somatic Variant Calling - CNV_**
   
