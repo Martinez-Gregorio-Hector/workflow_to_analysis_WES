@@ -1,6 +1,6 @@
 # **Workflow to analysis WES**
 
-This is a tutorial to analysis whole-exome-sequencing (WES), the coding region of genome, you can implement the workflow presented below. Directory [/bin](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin) contains the script to analysis WES
+This is a tutorial to analysis whole-exome-sequencing (WES), the coding region of genome, you can implement the workflow presented below. Directory [**/bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin) contains the script to analysis WES
 
 ## Overview of workflow
 ---
@@ -58,14 +58,30 @@ Before running these scripts, you need to download some software and data base
 Workflow steps
 ---
 
-### Line command 
-  1.**_Mapping_**
+    ### Line command 
+
+  1.**_Read quality_**
+Quality control of raw reads
+
+```
+### A sample
+fastqc directory/read1.fastq directorio/reads2.fastq
+
+### Several samples
+fastqc directory/*fastq
+
+``` 
+
+
+  2.**_Mapping_**
+Map reads to Reference
   
-  2.**_Preprocesing_**
+  3.**_Preprocesing_**
+
   
-  3.**_Somatic Variant Calling - SNV_**
+  4.**_Somatic Variant Calling - SNV_**
   
-  4.**_Somatic Variant Calling - CNV_**
+  5.**_Somatic Variant Calling - CNV_**
   
   
   
@@ -100,7 +116,7 @@ SnpEff
 VEP (Variant Effect Predictor)
 Reporting - runMultiQC.nf
 Reporting
-### R
+    ### R
 
   1.[**_deconstructSigs_**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
   
@@ -124,7 +140,7 @@ library("GenomeInfoDb")
 
   2.[**_ComplexHeatmap_**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
   
-Install these packages 
+Install this packages 
 ```
 library(devtools)
 install_github("jokergoo/ComplexHeatmap")
