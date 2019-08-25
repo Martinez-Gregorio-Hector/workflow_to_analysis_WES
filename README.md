@@ -2,7 +2,8 @@
 
 This is a tutorial to analysis whole-exome-sequencing (WES), in the directory /bin contains the script used for the workflow to analysis WES
 
-[FlujoDeTrabajo.pdf](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/files/3537745/FlujoDeTrabajo.pdf)
+![FlujoDeTrabajo](https://user-images.githubusercontent.com/53798505/63644449-24c55780-c6af-11e9-99f0-81e97b495c9d.png)
+
 
 1. Alignment
 
