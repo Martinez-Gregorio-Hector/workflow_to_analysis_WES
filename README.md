@@ -16,19 +16,20 @@ This is a tutorial to analysis whole-exome-sequencing (WES), the coding region o
 +-- workflow_to_analysis_WES
 
 |	+--bin/
-|		     +--1.FastQC.sh
-|		     +--2.Alignament.sh
-|		     +--3.PreprocesingGATKandMutect2.sh
-|		     +--4.CNVkit.sh
-|		     +--5.deconstructSigs.rmd
-|		     +--6.ComplexHeatmap.rmd
+|	        +--1.FastQC.sh
+|         +--2.Alignament.sh
+|	        +--3.PreprocesingGATKandMutect2.sh
+|	        +--4.CNVkit.sh
+|         +--5.deconstructSigs.rmd
+|	        +--6.ComplexHeatmap.rmd
 |	+--data/
-|		     +--raw/
-|		     +--bam/	
-|		     +--vcf/		
+|	        +--raw/
+|	        +--bam/
+|	        +--vcf/
+	
 |	+--figure/
-|		     +--MutationalSignature.png
-|		     +--ComplexHeatmap.png
+|	        +--MutationalSignature.png
+|	        +--ComplexHeatmap.png
 
 
 ```
