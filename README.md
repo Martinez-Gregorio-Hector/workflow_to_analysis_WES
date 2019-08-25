@@ -16,12 +16,10 @@ This is a tutorial to analysis whole-exome-sequencing (WES), the coding region o
 +-- workflow_to_analysis_WES
 
 |	+--bin/
-|	        +--1.FastQC.sh
-| 		+--2.Alignament.sh
-|	        +--3.PreprocesingGATKandMutect2.sh
-|	        +--4.CNVkit.sh
-| 		+--5.deconstructSigs.rmd
-|	        +--6.ComplexHeatmap.rmd
+|	        +--1.PreprocesingGATKandMutect2.sh
+|	        +--2.CNVkit.sh
+| 		+--3.deconstructSigs.rmd
+|	        +--4.ComplexHeatmap.rmd
 |	+--data/
 |	        +--raw/
 |	        +--bam/
@@ -57,8 +55,6 @@ Before running these scripts, you need to download some software and data base
 
 Workflow steps
 ---
-
-The rest of the script either **Line Comand** or **R** is in [**/bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
 
   ### Line command 
 
@@ -96,7 +92,8 @@ SM      Sample ID
 PL      platform (Illumina, 454, Ion torrent, Pacbio)
 LB      library number (can have multiple libraries for a given individual)
 ``` 
-  
+
+The rest of the script either **Line Comand** or **R** is in [**/bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
   3. **_Preprocesing_**
   
  ```
@@ -123,7 +120,7 @@ gatk MarkDuplicates
 
    ### R
  
- This part indicates how to install the packages, the rest of the script is in s in [**/bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
+ This part indicates how to install the packages, the rest of the script is in [**/bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
  
   1. **_deconstructSigs_**
   
