@@ -13,11 +13,19 @@ This is a tutorial to analysis whole-exome-sequencing (WES), the coding region o
 Before running these scripts, you need to download some software and data base
 
 
-  i) [**Human GRCh37/hg19**](http://hgdownload.cse.ucsc.edu/downloads.html#human) 
+  i) [**Human GRCh37/hg19**](http://hgdownload.cse.ucsc.edu/downloads.html#human)
+  
   ii) [**FastQC**](https://github.com/s-andrews/FastQC) 
+  
   iii) [**BWA**](https://github.com/lh3/bwa)
+  
   iv) [**GATK4**](https://github.com/broadinstitute/gatk#running), this package contains [**Mutect2**](https://www.nature.com/articles/nbt.2514)
-  v) 
+  
+  v) [**CNVkit**](https://github.com/etal/cnvkit)
+  
+  vi) [**deconstructSigs**](https://github.com/raerose01/deconstructSigs)
+  
+  vii) [**ComplexHeatmap**](https://github.com/jokergoo/ComplexHeatmap)
 
 
 
