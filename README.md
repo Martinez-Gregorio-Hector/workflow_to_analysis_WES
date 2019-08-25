@@ -1,16 +1,32 @@
-# README
-
 # **Workflow to analysis WES**
 
-This is a tutorial to analysis whole-exome-sequencing (WES), the coding region of genome, you can implement the workflow presented below. Directory [/bin](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin) contains the script used for the workflow to analysis WES
+This is a tutorial to analysis whole-exome-sequencing (WES), the coding region of genome, you can implement the workflow presented below. Directory [/bin](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin) contains the script to analysis WES
 
+## Overview of workflow
 ---
-
-## **Overview of the bioinformatic flow**
 
 ![FlujoDeTrabajo2](https://user-images.githubusercontent.com/53798505/63644484-9ef5dc00-c6af-11e9-9f0d-935508b21613.png)
 
 
+## Requirements
+---
+Before running these scripts, you need to download some software and data base
+
+
+  i) [**Human GRCh37/hg19**](http://hgdownload.cse.ucsc.edu/downloads.html#human) 
+  ii) [**FastQC**](https://github.com/s-andrews/FastQC) 
+  iii) [**BWA**](https://github.com/lh3/bwa)
+  iv) [**GATK4**](https://github.com/broadinstitute/gatk#running), this package contains [**Mutect2**](https://www.nature.com/articles/nbt.2514)
+  v) 
+
+
+
+Workflow steps
+---
+The workflow steps and tools used as
+
+
+The worflow steps and tools used are as follows:
 
 
 1. Alignment
