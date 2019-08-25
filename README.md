@@ -1,15 +1,11 @@
 # README
 
+This is a tutorial to analysis whole-exome-sequencing (WES), in the directory [/bin](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
+
 This is a tutorial to analysis whole-exome-sequencing (WES), in the directory /bin contains the script used for the workflow to analysis WES
 
 ![FlujoDeTrabajo2](https://user-images.githubusercontent.com/53798505/63644484-9ef5dc00-c6af-11e9-9f0d-935508b21613.png)
 
-...
-if (!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-
-BiocManager::install("heatmaps")
-...
 
 ---
 1. Alignment
