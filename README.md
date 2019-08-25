@@ -1,6 +1,8 @@
 # **Workflow to analysis WES**
 
-This is a tutorial to analysis whole-exome-sequencing (WES), the coding region of genome, you can implement the workflow presented below. Directory [**/bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin) contains the script to analysis WES
+This is a tutorial to analysis whole-exome-sequencing (WES), the coding region of genome.
+
+You can implement the workflow presented below. Directory [**/bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin) contains the script to analysis WES
 
 ## Overview of workflow
 ---
