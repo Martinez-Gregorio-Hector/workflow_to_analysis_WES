@@ -99,12 +99,20 @@ LB      library number (can have multiple libraries for a given individual)
   
   3. **_Preprocesing_**
   
-  Sort 
+ ```
+### Mark Duplicates
+gatk MarkDuplicates
 
+### Base (Quality Score) Recalibration
+ gatk BaseRecalibrator
+ gatk BaseRecalibrator
+
+
+``` 
   
   4. **_Somatic Variant Calling - SNV_**
   
-  see [**/bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin), more information in [**/GATK4 Mutect2**](https://gatkforums.broadinstitute.org/gatk/discussion/11136/how-to-call-somatic-mutations-using-gatk4-mutect2-deprecated)
+  see [**/bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin), more information in [**GATK4 Mutect2**](https://gatkforums.broadinstitute.org/gatk/discussion/11136/how-to-call-somatic-mutations-using-gatk4-mutect2-deprecated)
   
   
   5. **_Somatic Variant Calling - CNV_**
@@ -114,7 +122,9 @@ LB      library number (can have multiple libraries for a given individual)
 
 
    ### R
-
+ 
+ This part indicates how to install the packages, the rest of the script is in s in [**/bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
+ 
   1. **_deconstructSigs_**
   
   Install these packages 
