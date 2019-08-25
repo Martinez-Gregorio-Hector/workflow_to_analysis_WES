@@ -8,6 +8,32 @@ This is a tutorial to analysis whole-exome-sequencing (WES), the coding region o
 ![FlujoDeTrabajo2](https://user-images.githubusercontent.com/53798505/63644484-9ef5dc00-c6af-11e9-9f0d-935508b21613.png)
 
 
+
+## Directory organization
+---
+
+```
++-- workflow_to_analysis_WES
+
+|	+--bin/
+|		     +--1.FastQC.sh
+|		     +--2.Alignament.sh
+|		     +--3.PreprocesingGATKandMutect2.sh
+|		     +--4.CNVkit.sh
+|		     +--5.deconstructSigs.rmd
+|		     +--6.ComplexHeatmap.rmd
+|	+--data/
+|		     +--raw/
+|		     +--bam/	
+|		     +--vcf/		
+|	+--figure/
+|		     +--MutationalSignature.png
+|		     +--ComplexHeatmap.png
+
+
+```
+
+
 ## Requirements
 ---
 Before running these scripts, you need to download some software and data base
@@ -62,20 +88,3 @@ Before calling variant, the reads alignment are processing with GATK to sort rea
 6. Analysis for copy number variation
 
 
-This part is to analysis mutational signature and to create heatmap using R
-
-1. Mutational signature 
-
-
-2. Heatmap
-
-
-+-- Lung_cancer_transcriptome
-|	+--bin/
-|	+--data/
-|		+--rsem_output/
-|			+--rsem/
-|				+--<name_of_the_sample>/
-|			+--samples.txt
-|	+--human_genome/
-|	+--annotation/
