@@ -57,35 +57,41 @@ Before running these scripts, you need to download some software and data base
 
 Workflow steps
 ---
-The workflow steps and tools used as
-
+  1.**__**
+  2.**_Preprocesing_**
+  
 
 The worflow steps and tools used are as follows:
 
-
-1. Alignment
-
-To analyze WES, we need to alignment the reads (fastqc) using bwa, you can download this program in https://github.com/lh3/bwa. The script is in the bin file "Alignment"
-
-
-
-2. Preprocesing GATK
-
-Before calling variant, the reads alignment are processing with GATK to sort reads, mark reads duplicates and recalibrate the bases, once done this, the bam is ready to call variantes. To this section the script in in the bam file "preprocesing_GATK"
-
-
-3. Calling Variant with Mutect2
-
-
-
-4. Annotation in ANNOVAR
-
-
-
-5. Manual filtering
-
-
-6. Analysis for copy number variation
+Preprocessing - main.nf (based on GATK best practices)
+Map reads to Reference
+BWA
+Mark Duplicates
+GATK MarkDuplicates
+Base (Quality Score) Recalibration
+GATK BaseRecalibrator
+GATK ApplyBQSR
+Germline variant calling - germlineVC.nf
+SNVs and small indels
+GATK HaplotyeCaller
+Strelka2
+Structural variants
+Manta
+Somatic variant calling - somaticVC.nf (optional)
+SNVs and small indels
+MuTect2
+Freebayes
+Strelka2
+Structural variants
+Manta
+Sample heterogeneity, ploidy and CNVs
+ASCAT
+Annotation - annotate.nf (optional)
+Variant annotation
+SnpEff
+VEP (Variant Effect Predictor)
+Reporting - runMultiQC.nf
+Reporting
 
 
 
