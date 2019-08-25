@@ -116,7 +116,7 @@ LB      library number (can have multiple libraries for a given individual)
 
    ### R
 
-  1. [**_deconstructSigs_**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
+  1. **_deconstructSigs_**
   
   Install these packages 
 ```
@@ -136,7 +136,7 @@ library("GenomeInfoDb")
 ``` 
 
 
-  2. [**_ComplexHeatmap_**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
+  2. **_ComplexHeatmap_**
   
 Install this packages 
 ```
