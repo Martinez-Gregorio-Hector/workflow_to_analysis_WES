@@ -17,16 +17,15 @@ This is a tutorial to analysis whole-exome-sequencing (WES), the coding region o
 
 |	+--bin/
 |	        +--1.FastQC.sh
-|         +--2.Alignament.sh
+| 		+--2.Alignament.sh
 |	        +--3.PreprocesingGATKandMutect2.sh
 |	        +--4.CNVkit.sh
-|         +--5.deconstructSigs.rmd
+| 		+--5.deconstructSigs.rmd
 |	        +--6.ComplexHeatmap.rmd
 |	+--data/
 |	        +--raw/
 |	        +--bam/
 |	        +--vcf/
-	
 |	+--figure/
 |	        +--MutationalSignature.png
 |	        +--ComplexHeatmap.png
@@ -89,8 +88,5 @@ Before calling variant, the reads alignment are processing with GATK to sort rea
 6. Analysis for copy number variation
 
 
----
-![UNAM](https://user-images.githubusercontent.com/53798505/63645261-b6d55c00-c6bf-11e9-90ba-b84ae7bcb9b7.jpg)
-![IZTACZALA](https://user-images.githubusercontent.com/53798505/63645254-8f7e8f00-c6bf-11e9-89ea-3f2df157ce47.jpg)
-![LABNACIONAL](https://user-images.githubusercontent.com/53798505/63645263-c94f9580-c6bf-11e9-819d-fd18f49160bb.png)
+
 
