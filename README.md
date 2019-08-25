@@ -58,11 +58,11 @@ Before running these scripts, you need to download some software and data base
 Workflow steps
 ---
 
-The rest of the script either Line Comand or R is in [**/bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
+The rest of the script either **Line Comand** or **R** is in [**/bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
 
   ### Line command 
 
-  1.**_Read quality_**
+  1. **_Read quality_**
 
 Quality control of raw reads
 
@@ -75,7 +75,7 @@ fastqc directory/*fastq
 
 ``` 
 
-  2.**_Mapping_** - see [GATK best practices](https://software.broadinstitute.org/gatk/best-practices/about)
+  2. **_Mapping_** - see [GATK best practices](https://software.broadinstitute.org/gatk/best-practices/about)
 
 Map reads to Reference, more information [**here**](https://gatkforums.broadinstitute.org/gatk/discussion/4805/how-to-use-bwa-mem-for-paired-end-illumina-reads)
 
@@ -97,49 +97,26 @@ PL      platform (Illumina, 454, Ion torrent, Pacbio)
 LB      library number (can have multiple libraries for a given individual)
 ``` 
   
-  3.**_Preprocesing_**
+  3. **_Preprocesing_**
+  
+  Sort 
 
   
-  4.**_Somatic Variant Calling - SNV_**
+  4. **_Somatic Variant Calling - SNV_**
   
-  5.**_Somatic Variant Calling - CNV_**
+  see [**/bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin). More information in [**/GATK4 Mutect2**](https://gatkforums.broadinstitute.org/gatk/discussion/11136/how-to-call-somatic-mutations-using-gatk4-mutect2-deprecated)
   
+  GATK4 contains Mutect2
   
+  5. **_Somatic Variant Calling - CNV_**
   
-  The worflow steps and tools used are as follows:
+ CNVkit needs python to run, see [**CNVKit**](https://github.com/etal/cnvkit) to install the software
+  
 
 
-Map reads to Reference
-BWA
-Mark Duplicates
-GATK MarkDuplicates
-Base (Quality Score) Recalibration
-GATK BaseRecalibrator
-GATK ApplyBQSR
-Germline variant calling - germlineVC.nf
-SNVs and small indels
-GATK HaplotyeCaller
-Strelka2
-Structural variants
-Manta
-Somatic variant calling - somaticVC.nf (optional)
-SNVs and small indels
-MuTect2
-Freebayes
-Strelka2
-Structural variants
-Manta
-Sample heterogeneity, ploidy and CNVs
-ASCAT
-Annotation - annotate.nf (optional)
-Variant annotation
-SnpEff
-VEP (Variant Effect Predictor)
-Reporting - runMultiQC.nf
-Reporting
    ### R
 
-  1.[**_deconstructSigs_**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
+  1. [**_deconstructSigs_**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
   
   Install these packages 
 ```
@@ -159,7 +136,7 @@ library("GenomeInfoDb")
 ``` 
 
 
-  2.[**_ComplexHeatmap_**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
+  2. [**_ComplexHeatmap_**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
   
 Install this packages 
 ```
