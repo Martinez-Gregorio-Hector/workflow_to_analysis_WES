@@ -1,18 +1,18 @@
 # README
 
-This is a tutorial to analysis whole-exome-sequencing (WES), in the directory [/bin](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
-
-This is a tutorial to analysis whole-exome-sequencing (WES), in the directory /bin contains the script used for the workflow to analysis WES
-
-![FlujoDeTrabajo2](https://user-images.githubusercontent.com/53798505/63644484-9ef5dc00-c6af-11e9-9f0d-935508b21613.png)
-
+This is a tutorial to analysis whole-exome-sequencing (WES), the coding region of genome, you can implement the workflow presented below. Directory [/bin](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin) contains the script used for the workflow to analysis WES
 
 ---
+Overview of the bioinformatic flow
+![FlujoDeTrabajo2](https://user-images.githubusercontent.com/53798505/63644484-9ef5dc00-c6af-11e9-9f0d-935508b21613.png)
+---
+
+
 1. Alignment
 
 To analyze WES, we need to alignment the reads (fastqc) using bwa, you can download this program in https://github.com/lh3/bwa. The script is in the bin file "Alignment"
 
----
+
 
 2. Preprocesing GATK
 
