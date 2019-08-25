@@ -2,6 +2,8 @@
 
 This is a tutorial to analysis whole-exome-sequencing (WES), in the directory /bin contains the script used for the workflow to analysis WES
 
+[FlujoDeTrabajo.pdf](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/files/3537745/FlujoDeTrabajo.pdf)
+
 1. Alignment
 
 To analyze WES, we need to alignment the reads (fastqc) using bwa, you can download this program in https://github.com/lh3/bwa. The script is in the bin file "Alignment"
