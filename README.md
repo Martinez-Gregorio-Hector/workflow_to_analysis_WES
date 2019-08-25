@@ -57,11 +57,19 @@ Before running these scripts, you need to download some software and data base
 
 Workflow steps
 ---
-  1.**__**
+
+### Line command 
+  1.**_Mapping_**
+  
   2.**_Preprocesing_**
   
-
-The worflow steps and tools used are as follows:
+  3.**_Somatic Variant Calling - SNV_**
+  
+  4.**_Somatic Variant Calling - CNV_**
+  
+  
+  
+  The worflow steps and tools used are as follows:
 
 Preprocessing - main.nf (based on GATK best practices)
 Map reads to Reference
@@ -92,7 +100,46 @@ SnpEff
 VEP (Variant Effect Predictor)
 Reporting - runMultiQC.nf
 Reporting
+### R
+
+  1.[**_deconstructSigs_**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
+  
+  Install these packages 
+```
+source("https://bioconductor.org/biocLite.R")
+biocLite("deconstructSigs")
+biocLite("BSgenome.Hsapiens.UCSC.hg19")
+biocLite("GenomeInfoDb")
+
+``` 
+Once installed, deconstructSigs can be loaded:
+
+```
+library("deconstructSigs")
+library("BSgenome.Hsapiens.UCSC.hg19")
+library("GenomeInfoDb")
+
+``` 
+
+
+  2.[**_ComplexHeatmap_**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
+  
+Install these packages 
+```
+library(devtools)
+install_github("jokergoo/ComplexHeatmap")
+
+``` 
+Once installed, ComplexHeatmap can be loaded:
+
+```
+library(ComplexHeatmap)
+
+``` 
+
+The rest of the script is in [**/bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
 
 
 
-
+---
+![NGS](https://user-images.githubusercontent.com/53798505/63645404-403a5d80-c6c3-11e9-83fb-8c6dfbb2698c.png)
