@@ -67,7 +67,7 @@ Quality control of raw reads
 fastqc directory/read1.fastq directorio/reads2.fastq
 
 ### Several samples
-fastqc directory/*fastq
+fastqc directory/*.fastq
 
 ``` 
 
@@ -93,9 +93,9 @@ PL      platform (Illumina, 454, Ion torrent, Pacbio)
 LB      library number (can have multiple libraries for a given individual)
 ``` 
 
-The rest of the script either **Line Comand** or **R** is in [**/bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
   3. **_Preprocesing_**
   
+For steps 3-5 see [**/bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
  ```
 ### Mark Duplicates
 gatk MarkDuplicates
@@ -109,7 +109,7 @@ gatk MarkDuplicates
   
   4. **_Somatic Variant Calling - SNV_**
   
-  see [**/bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin), more information in [**GATK4 Mutect2**](https://gatkforums.broadinstitute.org/gatk/discussion/11136/how-to-call-somatic-mutations-using-gatk4-mutect2-deprecated)
+More information in [**GATK4 Mutect2**](https://gatkforums.broadinstitute.org/gatk/discussion/11136/how-to-call-somatic-mutations-using-gatk4-mutect2-deprecated)
   
   
   5. **_Somatic Variant Calling - CNV_**
