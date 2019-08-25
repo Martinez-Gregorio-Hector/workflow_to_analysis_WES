@@ -89,3 +89,8 @@ Before calling variant, the reads alignment are processing with GATK to sort rea
 6. Analysis for copy number variation
 
 
+---
+![UNAM](https://user-images.githubusercontent.com/53798505/63645261-b6d55c00-c6bf-11e9-90ba-b84ae7bcb9b7.jpg)
+![IZTACZALA](https://user-images.githubusercontent.com/53798505/63645254-8f7e8f00-c6bf-11e9-89ea-3f2df157ce47.jpg)
+![LABNACIONAL](https://user-images.githubusercontent.com/53798505/63645263-c94f9580-c6bf-11e9-819d-fd18f49160bb.png)
+
