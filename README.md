@@ -4,11 +4,12 @@ This is a tutorial to analysis whole-exome-sequencing (WES), in the directory /b
 
 ![FlujoDeTrabajo2](https://user-images.githubusercontent.com/53798505/63644484-9ef5dc00-c6af-11e9-9f0d-935508b21613.png)
 
-
+...
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
 BiocManager::install("heatmaps")
+...
 
 ---
 1. Alignment
