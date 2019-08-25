@@ -1,13 +1,16 @@
 # README
 
+# **Workflow to analysis WES**
+
 This is a tutorial to analysis whole-exome-sequencing (WES), the coding region of genome, you can implement the workflow presented below. Directory [/bin](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin) contains the script used for the workflow to analysis WES
 
 ---
 
-**_Overview of the bioinformatic flow_**
+## **Overview of the bioinformatic flow**
 
 ![FlujoDeTrabajo2](https://user-images.githubusercontent.com/53798505/63644484-9ef5dc00-c6af-11e9-9f0d-935508b21613.png)
----
+
+
 
 
 1. Alignment
@@ -41,3 +44,14 @@ This part is to analysis mutational signature and to create heatmap using R
 
 
 2. Heatmap
+
+
++-- Lung_cancer_transcriptome
+|	+--bin/
+|	+--data/
+|		+--rsem_output/
+|			+--rsem/
+|				+--<name_of_the_sample>/
+|			+--samples.txt
+|	+--human_genome/
+|	+--annotation/
