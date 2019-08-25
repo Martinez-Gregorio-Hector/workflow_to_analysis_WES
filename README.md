@@ -58,9 +58,12 @@ Before running these scripts, you need to download some software and data base
 Workflow steps
 ---
 
-    ### Line command 
+The rest of the script either Line Comand or R is in [**/bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
+
+  ### Line command 
 
   1.**_Read quality_**
+
 Quality control of raw reads
 
 ```
@@ -72,9 +75,27 @@ fastqc directory/*fastq
 
 ``` 
 
+  2.**_Mapping_** - see [GATK best practices](https://software.broadinstitute.org/gatk/best-practices/about)
 
-  2.**_Mapping_**
-Map reads to Reference
+Map reads to Reference, more information [**here**](https://gatkforums.broadinstitute.org/gatk/discussion/4805/how-to-use-bwa-mem-for-paired-end-illumina-reads)
+
+```
+### Run
+
+bwa mem -M -t 10 -R '@RG\tID:see_below\tSM:see_below\tPL:see_below\tLB:see_below' \
+directory/reference.fasta read1.fastq read2.fastq > ReadAligned.sam
+
+mem     BWA-MEM algorithm
+-M      Mark shorter split hits as secondary
+-t      Number of threads
+-R      Complete read group header line. ’\t’ can be used in STR and will be converted to a TAB 
+        in the output SAM. The read group ID will be attached to every read in the output
+@RG     An indicator that this line is a read group identifier line
+ID      Group ID
+SM      Sample ID
+PL      platform (Illumina, 454, Ion torrent, Pacbio)
+LB      library number (can have multiple libraries for a given individual)
+``` 
   
   3.**_Preprocesing_**
 
@@ -87,7 +108,7 @@ Map reads to Reference
   
   The worflow steps and tools used are as follows:
 
-Preprocessing - main.nf (based on GATK best practices)
+
 Map reads to Reference
 BWA
 Mark Duplicates
@@ -116,7 +137,7 @@ SnpEff
 VEP (Variant Effect Predictor)
 Reporting - runMultiQC.nf
 Reporting
-    ### R
+   ### R
 
   1.[**_deconstructSigs_**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
   
@@ -152,10 +173,6 @@ Once installed, ComplexHeatmap can be loaded:
 library(ComplexHeatmap)
 
 ``` 
-
-The rest of the script is in [**/bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
-
-
 
 ---
 ![NGS](https://user-images.githubusercontent.com/53798505/63645404-403a5d80-c6c3-11e9-83fb-8c6dfbb2698c.png)
