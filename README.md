@@ -36,22 +36,25 @@ You can implement the workflow presented below. Directory [**/bin**](https://git
 
 ## Requirements
 ---
-Before running these scripts, you need to download some software and data base
+Before running these scripts, you need to download:
 
+## Data base
 
   i) [**Human GRCh37/hg19**](http://hgdownload.cse.ucsc.edu/downloads.html#human)
   
-  ii) [**FastQC**](https://github.com/s-andrews/FastQC) 
+## Software
   
-  iii) [**BWA**](https://github.com/lh3/bwa)
+  i) [**FastQC_vo.11.8**](https://www.bioinformatics.babraham.ac.uk/projects/download.html#fastqc) 
   
-  iv) [**GATK4**](https://github.com/broadinstitute/gatk#running), this package contains [**Mutect2**](https://www.nature.com/articles/nbt.2514)
+  ii) [**BWA**](https://github.com/lh3/bwa)
   
-  v) [**CNVkit**](https://github.com/etal/cnvkit)
+  iii) [**GATK4**](https://github.com/broadinstitute/gatk#running), this package contains [**Mutect2**](https://www.nature.com/articles/nbt.2514)
   
-  vi) [**deconstructSigs**](https://github.com/raerose01/deconstructSigs)
+  iv) [**CNVkit**](https://github.com/etal/cnvkit)
   
-  vii) [**ComplexHeatmap**](https://github.com/jokergoo/ComplexHeatmap)
+  v) [**deconstructSigs**](https://github.com/raerose01/deconstructSigs)
+  
+  vi) [**ComplexHeatmap**](https://github.com/jokergoo/ComplexHeatmap)
 
 
 
