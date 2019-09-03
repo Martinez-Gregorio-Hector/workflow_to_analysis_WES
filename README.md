@@ -1,4 +1,4 @@
-# **Workflow to analysis WES**
+https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin# **Workflow to analysis WES**
 
 This is a tutorial to analysis whole-exome-sequencing (WES).
 
@@ -31,7 +31,7 @@ You can implement the workflow presented below. Directory [**/bin**](https://git
 |	        +--ComplexHeatmap.png
 
 
-```
+```### /bin/
 
 
 ## Requirements
@@ -54,8 +54,23 @@ Before running these scripts, you need to download:
   
   v) [**deconstructSigs**](https://github.com/raerose01/deconstructSigs)
   
-  vi) [**ComplexHeatmap**](https://github.com/jokergoo/ComplexHeatmap)
+  vi) [**ComplexHeatmap**](hthttps://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bintps://github.com/jokergoo/ComplexHeatmap)
 
+
+### /bin/
+
+Contain the script to analize WES
+
+
+### /data/
+
+Contain data which you use to stablish your workflow, this directory contains [**fastq file**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/fastq), [**sam file**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/sam), [**bam file**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/bam), and [**vcf](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/vcf). You can download the several file and run the [**script**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin).
+
+### /figure/ 
+
+In construction
+
+### /meta/ 
 
 
 Workflow steps
@@ -93,7 +108,7 @@ mem     BWA-MEM algorithm
         in the output SAM. The read group ID will be attached to every read in the output
 @RG     An indicator that this line is a read group identifier line
 ID      Group ID
-SM      Sample ID
+SM      Sample ID### /bin/
 PL      platform (Illumina, 454, Ion torrent, Pacbio)
 LB      library number (can have multiple libraries for a given individual)
 ``` 
