@@ -33,13 +33,11 @@ The repository is organized as follows
 |	            +--ComplexHeatmap.png
 ```
 
-* [**bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
+* [**bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin): This sudirectory contains the scripts and a README that explain how is organized the workflow to analyze WES.
 
-This directory contains scripts 
+* [**data**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data): This subdirectory contains data such fastq, sam, bam, and vcf files.
 
-* [**data**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data)
-
-* [**figure**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/figure)
+* [**figure**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/figure): This subdirectory contains images of the R packages
 
 
 ## Requirements
