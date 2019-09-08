@@ -1,32 +1,40 @@
-# **Workflow to analysis WES**
-
- This is a pipeline to analysis whole-exome-sequencing (WES).
+# **Pipeline to analysis Whole-Exome Sequencing (WES)**
 
 ## Overview of workflow
----
+
 
 ![FlujoDeTrabajo2](https://user-images.githubusercontent.com/53798505/63644484-9ef5dc00-c6af-11e9-9f0d-935508b21613.png)
 
 
 
 ## Directory organization
----
+
+
+The repository is organized as follows
 
 ```
 +-- workflow_to_analysis_WES
 
 |	+--bin/
-|	        +--1.PreprocesingGATKandMutect2.sh
-|	        +--2.CNVkit.sh
-| 		+--3.deconstructSigs.rmd
-|	        +--4.ComplexHeatmap.rmd
+|	        +-- 1_FastQC.sh
+|	        +-- 2_Alignment.sh
+|	        +-- 3_PreprocesingGATK4.sh
+|	        +-- 4_Mutect2.sh
+|	        +-- 5_CNVkit.sh
+|	        +-- 6_MutationalSignature.rmd
+|	        +-- 7_Heatmap.rmd
 |	+--data/
-|	        +--raw/
-|	        +--bam/
-|	        +--vcf/
+|	        +-- bam
+|	        +-- fastq
+|	        +-- sam
+|	        +-- vcf
 |	+--figure/
 |	        +--MutationalSignature.png
 |	        +--ComplexHeatmap.png
+```
+
+
+
 
 
 ```### /bin/
