@@ -44,11 +44,11 @@ The repository is organized as follows
 
 Before running these scripts, you need to download:
 
-## Data base
+Data base
 
   i) [**Human GRCh37/hg19**](http://hgdownload.cse.ucsc.edu/downloads.html#human)
   
-## Software
+Software
   
   i) [**FastQC_vo.11.8**](https://www.bioinformatics.babraham.ac.uk/projects/download.html#fastqc) 
   
