@@ -16,24 +16,24 @@ The repository is organized as follows
 +-- workflow_to_analysis_WES
 
 |	+--bin/
-|	        +-- 1_FastQC.sh
-|	        +-- 2_Alignment.sh
-|	        +-- 3_PreprocesingGATK4.sh
-|	        +-- 4_Mutect2.sh
-|	        +-- 5_CNVkit.sh
-|	        +-- 6_MutationalSignature.rmd
-|	        +-- 7_Heatmap.rmd
+|	            +-- 1_FastQC.sh
+|	            +-- 2_Alignment.sh
+|	            +-- 3_PreprocesingGATK4.sh
+|	            +-- 4_Mutect2.sh
+|	            +-- 5_CNVkit.sh
+|	            +-- 6_MutationalSignature.rmd
+|	            +-- 7_Heatmap.rmd
 |	+--data/
-|	        +-- bam
-|	        +-- fastq
-|	        +-- sam
-|	        +-- vcf
+|	            +-- bam
+|	            +-- fastq
+|	            +-- sam
+|	            +-- vcf
 |	+--figure/
-|	        +--MutationalSignature.png
-|	        +--ComplexHeatmap.png
+|	            +--MutationalSignature.png
+|	            +--ComplexHeatmap.png
 ```
 
-
+## bin
 
 
 
@@ -144,44 +144,6 @@ More information in [**GATK4 Mutect2**](https://gatkforums.broadinstitute.org/ga
   
 
 
-   ### R
- 
- This part indicates how to install the packages, the rest of the script is in [**/bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
- 
-  1. **_deconstructSigs_**
-  
-  Install these packages 
-```
-source("https://bioconductor.org/biocLite.R")
-biocLite("deconstructSigs")
-biocLite("BSgenome.Hsapiens.UCSC.hg19")
-biocLite("GenomeInfoDb")
-
-``` 
-Once installed, deconstructSigs can be loaded:
-
-```
-library("deconstructSigs")
-library("BSgenome.Hsapiens.UCSC.hg19")
-library("GenomeInfoDb")
-
-``` 
-
-
-  2. **_ComplexHeatmap_**
-  
-Install this packages 
-```
-library(devtools)
-install_github("jokergoo/ComplexHeatmap")
-
-``` 
-Once installed, ComplexHeatmap can be loaded:
-
-```
-library(ComplexHeatmap)
-
-``` 
 
 ---
 ![NGS](https://user-images.githubusercontent.com/53798505/63645404-403a5d80-c6c3-11e9-83fb-8c6dfbb2698c.png)
