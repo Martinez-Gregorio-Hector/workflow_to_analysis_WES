@@ -62,6 +62,6 @@ Before running these scripts, you need to download:
   
   v) [**deconstructSigs**](https://github.com/raerose01/deconstructSigs)
   
-  vi) [**ComplexHeatmap**](hthttps://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bintps://github.com/jokergoo/ComplexHeatmap)
+  vi) [**ComplexHeatmap**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bintps://github.com/jokergoo/ComplexHeatmap)
 
 
