@@ -33,15 +33,15 @@ The repository is organized as follows
 |	            +--ComplexHeatmap.png
 ```
 
-## bin
+* [**bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
 
+* [**data**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data)
 
-
-```### /bin/
+* [**figure**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/figure)
 
 
 ## Requirements
----
+
 Before running these scripts, you need to download:
 
 ## Data base
@@ -63,87 +63,3 @@ Before running these scripts, you need to download:
   vi) [**ComplexHeatmap**](hthttps://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bintps://github.com/jokergoo/ComplexHeatmap)
 
 
-### /bin/
-
-Contain the script to analize WES
-
-
-### /data/
-
-Contain data which you use to stablish your workflow, this directory contains [**fastq file**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/fastq), [**sam file**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/sam), [**bam file**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/bam), and [**vcf](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/vcf). You can download the several file and run the [**script**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin).
-
-### /figure/ 
-
-In construction
-
-### /meta/ 
-
-
-Workflow steps
----
-
-  ### Line command 
-
-  1. **_Read quality_**
-
-Quality control of raw reads
-
-```
-### A sample
-fastqc directory/read1.fastq directorio/reads2.fastq
-
-### Several samples
-fastqc directory/*.fastq
-
-``` 
-
-  2. **_Mapping_** - see [GATK best practices](https://software.broadinstitute.org/gatk/best-practices/about)
-
-Map reads to Reference, more information [**here**](https://gatkforums.broadinstitute.org/gatk/discussion/4805/how-to-use-bwa-mem-for-paired-end-illumina-reads)
-
-```
-### Run
-
-bwa mem -M -t 10 -R '@RG\tID:see_below\tSM:see_below\tPL:see_below\tLB:see_below' \
-directory/reference.fasta read1.fastq read2.fastq > ReadAligned.sam
-
-mem     BWA-MEM algorithm
--M      Mark shorter split hits as secondary
--t      Number of threads
--R      Complete read group header line. ’\t’ can be used in STR and will be converted to a TAB 
-        in the output SAM. The read group ID will be attached to every read in the output
-@RG     An indicator that this line is a read group identifier line
-ID      Group ID
-SM      Sample ID### /bin/
-PL      platform (Illumina, 454, Ion torrent, Pacbio)
-LB      library number (can have multiple libraries for a given individual)
-``` 
-
-  3. **_Preprocesing_**
-  
-For steps 3-5 see [**/bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin)
- ```
-### Mark Duplicates
-gatk MarkDuplicates
-
-### Base (Quality Score) Recalibration
- gatk BaseRecalibrator
- gatk BaseRecalibrator
-
-
-``` 
-  
-  4. **_Somatic Variant Calling - SNV_**
-  
-More information in [**GATK4 Mutect2**](https://gatkforums.broadinstitute.org/gatk/discussion/11136/how-to-call-somatic-mutations-using-gatk4-mutect2-deprecated)
-  
-  
-  5. **_Somatic Variant Calling - CNV_**
-  
- CNVkit needs python to run, see [**CNVKit**](https://github.com/etal/cnvkit) to install the software
-  
-
-
-
----
-![NGS](https://user-images.githubusercontent.com/53798505/63645404-403a5d80-c6c3-11e9-83fb-8c6dfbb2698c.png)
