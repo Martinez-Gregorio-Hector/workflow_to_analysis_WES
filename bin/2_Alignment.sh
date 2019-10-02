@@ -16,13 +16,14 @@ bwa mem -M -t 6 -R "@RG\tID:\tSM:\tPL:\tPU:\tLB:" [ref.fasta] readN.fastq > alig
 
 tar -zxvf .tar.gz # extract the file to generate files Tumor1.fastq ... TumorN.fastq
 
-mkdir -p ../sam
+mkdir -p ../01_Sam
 
 
 for prefix in $(ls *.fastq | rev | cut -c 7- | rev | uniq); do
-bwa mem -M -t 10 -R "@RG\tID:${prefix}\tSM:${prefix}\tPL:illumina\tPU:Lane1\tLB:exome" \
-[reference.fasta] ${prefix}.fastq > ../sam/${prefix}.aligned.sam
+bwa mem -M -t 10 -R "@RG\tID:${prefix}\tSM:${prefix}\tPL:illumina\tPU:Lane1\tLB:exome"  \
+[reference.fasta] ${prefix}.fastq > ${prefix}.aligned.sam
 done
 
+mv *.aligned.sam ../01_Sam/
 
 
