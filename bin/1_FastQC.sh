@@ -13,4 +13,4 @@ done
 
 ## move your results in fastqc_reports
 
-mv *.html *.zip fastcq_reports
+mv *.html *.zip fastcq_reports/
