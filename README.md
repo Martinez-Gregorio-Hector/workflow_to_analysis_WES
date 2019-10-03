@@ -1,7 +1,8 @@
 # **Pipeline to analysis Whole-Exome Sequencing (WES)**
 
-## Overview of workflow
+The objective of this repository is show a workflow to analyze exome sequencing using packages such as GATK, mutect2 and CNVKit which are performed in bash and the other part in R to analyze mutagenic signatures and do heatmaps.
 
+This is the general workflow.
 
 ![FlujoDeTrabajo2](https://user-images.githubusercontent.com/53798505/63644484-9ef5dc00-c6af-11e9-9f0d-935508b21613.png)
 
