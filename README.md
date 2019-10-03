@@ -57,6 +57,8 @@ Before running these scripts, you need to download:
   
 ### Software
   
+ Line command
+ 
   i) [**FastQC_vo.11.8**](https://www.bioinformatics.babraham.ac.uk/projects/download.html#fastqc) 
   
   ii) [**BWA**](https://github.com/lh3/bwa)
@@ -65,8 +67,10 @@ Before running these scripts, you need to download:
   
   iv) [**CNVkit**](https://github.com/etal/cnvkit)
   
+ R 
+ 
   v) [**deconstructSigs**](https://github.com/raerose01/deconstructSigs)
   
-  vi) [**ComplexHeatmap**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bintps://github.com/jokergoo/ComplexHeatmap)
+  vi) [**ComplexHeatmap**](https://github.com/jokergoo/ComplexHeatmap)
 
 
