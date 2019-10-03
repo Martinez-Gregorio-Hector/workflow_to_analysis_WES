@@ -57,7 +57,7 @@ Before running these scripts, you need to download:
   
 ### Software
   
- ***Line command
+ ***Line command***
  
   i) [**FastQC_vo.11.8**](https://www.bioinformatics.babraham.ac.uk/projects/download.html#fastqc) 
   
@@ -67,7 +67,7 @@ Before running these scripts, you need to download:
   
   iv) [**CNVkit**](https://github.com/etal/cnvkit)
   
-***R 
+***R***
  
   v) [**deconstructSigs**](https://github.com/raerose01/deconstructSigs)
   
