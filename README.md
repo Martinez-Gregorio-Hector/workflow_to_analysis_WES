@@ -27,6 +27,7 @@ The repository is organized as follows
 |	            +-- 6_MutationalSignature.rmd
 |	            +-- 7_Heatmap.rmd
 |	+--data/
+|	            +-- MutationalSignature
 |	            +-- bam
 |	            +-- fastq
 |	            +-- sam
