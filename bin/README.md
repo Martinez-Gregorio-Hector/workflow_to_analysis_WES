@@ -9,19 +9,11 @@ If you don´t have reads in fastq, sam, bam, and vcf files these could be downlo
 
 **3_PreprocesingGATK4.sh** - Contains script 
 
-**4_Mutect2.sh**
+**4_Mutect2.sh** - Contains script 
 
-Contains script 
+**5_CNVkit.sh** - Contains script
 
-**5_CNVkit.sh**
+**6_MutationalSignature.rmd** - Contains script
 
-Contains script
-
-**6_MutationalSignature.rmd**
-
-Contains script
-
-**7_Heatmap.rmd**
-
-Contains script
+**7_Heatmap.rmd** - Contains script
 
