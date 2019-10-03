@@ -5,6 +5,7 @@ The objective of this repository is show a workflow to analyze whole-exome seque
 This is the general workflow.
 
 
+
 ![FlujoDeTrabajo2](https://user-images.githubusercontent.com/53798505/63644484-9ef5dc00-c6af-11e9-9f0d-935508b21613.png)
 
 
