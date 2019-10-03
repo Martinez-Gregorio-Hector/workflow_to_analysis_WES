@@ -2,7 +2,7 @@
 ## Once the software was downloaded and added on the PATH
 ## This script is used for data preprocessing and generates a bam file ready for variant calling. It contains 6 steps
 
-## ##### Your data could be organized in this for
+## ##### Your data could be organized in this form
 
 # bin
 # data
