@@ -1,4 +1,4 @@
-# **bin**
+# **README**
 
 This subdirectory contains script to analyze WES and is organized as follows.
 If you don´t have reads in fastq, sam, bam, and vcf files these could be downloaded [here](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data).
