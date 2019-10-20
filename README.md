@@ -46,7 +46,7 @@ The repository is organized as follows
 
 ## Requirements
 
-Before running these scripts, you need to download:
+Before run these scripts, you need to download:
 
 ### Data base
 
