@@ -1,0 +1,99 @@
+---
+title: "ComplexHeatmap"
+date: "23/8/2019"
+output: html_document
+---
+
+### Install ComplexHeatmap with devtools
+```{r}
+library(devtools)
+install_github("jokergoo/ComplexHeatmap")
+```
+
+### Load the library
+```{r}
+library(ComplexHeatmap)
+```
+
+### Load variants saved either in csv or txt
+```{r}
+ToHeatmap <- write.csv("VariantstoHeatmap.csvc", sep = ",", header = TRUE)
+head(ToHeatmap)
+```
+
+### With "sort" select the variables that want to include in the heatmap
+### Our data have three columns (first column - Sample; second column - Gene, and third - Type)
+```{r}
+
+nameValsSample <- sort(unique(unlist(ToHeatmap[,1]))) # First column
+nameValsGene <- sort(unique(unlist(ToHeatmap[,2]))) # Second column
+
+# construct matrix of correct dimensions with row and column names
+myMat <- matrix("", length(nameValsSample),
+                length(nameValsGene), dimnames = list(nameValsSample, nameValsGene))
+
+# fill in the matrix with matrix indexing on row and column names
+myMat[as.matrix(ToHeatmap[c("Sample",
+                             "Gene")])] <- as.character(ToHeatmap[["Type"]])   
+
+```
+
+
+```{r}
+# with the functions below we set the heatmap colors
+# gp = gpar(fill = "#F8FCFC" ... ) - it is the color of the variables in the oncoprint
+# gp = gpar(..., col = "black") - is the color of the contour
+
+get_type_fun_onoco = function(x) strsplit(x, ";")[[1]]
+
+alter_fun = list(
+  background = function(x, y, w, h) {
+    grid.rect(x, y, w-unit(0.1, "mm"), h-unit(0.1, "mm"), gp = gpar(fill = "#F8FCFC", col = "black"))
+  },
+  stopgain = function(x, y, w, h) {
+    grid.rect(x, y, w-unit(0.1, "mm"), h-unit(0.1, "mm"), gp = gpar(fill = "#721210", col = "black"))
+  },
+  Hotspot = function(x, y, w, h) {
+    grid.rect(x, y, w-unit(0.1, "mm"), h-unit(0.1, "mm"), gp = gpar(fill = "#ED903D", col = "black"))
+  },
+  Gain = function(x, y, w, h) {
+    grid.rect(x, y, w-unit(0.1, "mm"), h-unit(0.1, "mm"), gp = gpar(fill = "#FF0000", col = "black"))
+  },
+  Loss = function(x, y, w, h) {
+    grid.rect(x, y, w-unit(0.1, "mm"), h-unit(0.1, "mm"), gp = gpar(fill = "#005EFF", col = "black"))
+  },
+  Frameshift_deletion = function(x, y, w, h) {
+    grid.rect(x, y, w-unit(0.1, "mm"), h-unit(0.1, "mm"), gp = gpar(fill = "#084A61", col = "black"))
+  },
+  Nonsynonymous_SNV = function(x, y, w, h) {
+    grid.rect(x, y, w-unit(0.1, "mm"), h-unit(0.1, "mm"), gp = gpar(fill = "#85B013", col = "black"))
+  },
+  Frameshift_insertion = function(x, y, w, h) {
+    grid.rect(x, y, w-unit(0.1, "mm"), h-unit(0.1, "mm"), gp = gpar(fill = "#13B0A3", col = "black"))
+  }
+)
+
+col = c("stopgain"="#721210",
+        "Hotspot"="#ED903D",
+        "Gain"="#FF0000",
+        "Loss"="#005EFF",
+        "Frameshift_deletion"="#084A61",
+        "Nonsynonymous_SNV"="#85B013",
+        "Frameshift_insertion"="#13B0A3")
+```
+
+
+### with this function plot the heatmap
+```{r}
+ht <- oncoPrint(t(myMat), alter_fun = alter_fun, col = col, show_column_names = TRUE,
+                left_annotation =  rowAnnotation(rbar = anno_oncoprint_barplot(
+                    axis_param = list(side = "top", direction = "reverse"), 
+                    border = FALSE, width = unit(1, "cm"))), 
+                right_annotation = NULL,
+                top_annotation = HeatmapAnnotation(cbar = anno_oncoprint_barplot(border = FALSE, 
+                                                          height = unit(1, "cm"))))
+
+
+draw(ht)
+```
+
