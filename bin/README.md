@@ -9,7 +9,7 @@ If you don´t have reads in fastq, sam, bam, and vcf files these could be downlo
 
 **3_PreprocesingGATK4.sh** - Contains script to preprocessing of data and generate a bam ready to variants calling
 
-**4_Mutect2.sh** - Contains script 
+**4_Mutect2.sh** - Contains scripts to call variants using tumor only
 
 **5_CNVkit.sh** - Contains script
 
