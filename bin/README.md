@@ -21,7 +21,7 @@ b) access-5k-mappable.hg19.bed - is in the folder of data in cnvkit (cnvkit > da
 
 c) refFlat.txt - download in http://hgdownload.cse.ucsc.edu/goldenPath/hg19/database/refFlat.txt.gz
 
-**6_MutationalSignature.rmd** - Contains script
+**6_MutationalSignature.rmd** - Contains scripts to analyze mutational signature 
 
-**7_Heatmap.rmd** - Contains script
+**7_Heatmap.rmd** - Contains scripts to plot variants and do heatmaps
 
