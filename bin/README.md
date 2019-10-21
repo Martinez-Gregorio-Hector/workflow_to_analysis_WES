@@ -7,7 +7,7 @@ If you don´t have reads in fastq, sam, bam, and vcf files these could be downlo
 
 **2_Alignment.sh** - Contains script to align the readings using the bwa mem algorithm.
 
-**3_PreprocesingGATK4.sh** - Contains script 
+**3_PreprocesingGATK4.sh** - Contains script to preprocessing of data and generate a bam ready to variants calling
 
 **4_Mutect2.sh** - Contains script 
 
