@@ -1,6 +1,6 @@
 # **README**
 
-This subdirectory contains script to analyze WES and is organized as follows.
+These subdirectories contain scripts to analyze WES and is organized as follows.
 If you don´t have reads in fastq, sam, bam, and vcf files these could be downloaded [here](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data).
 
 **1_FastQC.sh** - Contains scripts to evaluate the quality of the sequenced bases.
