@@ -4,10 +4,12 @@
 
 ## ##### Your data could be organized in this form
 
-# bin
-# data
-##  01_fastq ##
-##  02_Sam ## R
+```
+  bin
+  data
+      01_fastq 
+      02_Sam 
+```
 
 ## 1. SortSam
 # This tool sorts the input SAM or BAM file by coordinate, queryname (QNAME), or some other property of the SAM record.
@@ -36,7 +38,7 @@ mv ../data/Gatk01_SortSam/*.bam ../data/Gatk02_SamFormatConverter/
 ## 3. MarkDuplicates
 # This tool locates and tags duplicate reads in a BAM or SAM file, where duplicate reads are defined as originating from a single fragment of DNA.
 # Duplicates can arise during sample preparation e.g. library construction using PCR.
-# Duplicatesnot have a origen biological
+# Duplicates not have a origen biological
 
 mkdir -p ../data/Gatk03_MarkDuplicates
 
@@ -48,7 +50,7 @@ mv ../data/Gatk02_SamFormatConverter/*.Dedup.bam ../data/Gatk02_SamFormatConvert
 
 ##  4. BuildBamIndex
 # Generates a BAM index ".bai" file. 
-# This tool creates an index file for the input BAM that allows fast look-up of data in a BAM file, lke an index on a database. 
+# This tool creates an index file for the input BAM that allows fast look-up of data in a BAM file, like an index on a database. 
 
 mkdir -p ../data/Gatk04_BuildBamIndex
 
