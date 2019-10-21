@@ -7,7 +7,7 @@ bwa mem -M -t 6 -R "@RG\tID:\tSM:\tPL:\tPU:\tLB:" [ref.fasta] readN.fastq > alig
 
 -M  if a read is split (different parts map to different places) mark all parts other than main as "secondary alignement"
 -R add Read Group description (tID:id.sample\tSM:sample\tPL:plataform\tPU:platform.used\tLB:type.of.library)
--t treads
+-t treads 
 -readN.fastq Can be single-end or paired-end 
 
 ### Doing loops for samples that will be analyzed
