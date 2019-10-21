@@ -1,0 +1,139 @@
+---
+title: "deconstructSigs"
+date: "20/10/2019"
+output: html_document
+---
+
+Script to analyze deconstructSigs
+
+deconstructSigs aims to determine the contribution of known mutational processes to a tumor sample.
+
+By using deconstructSigs, one can:
+a. Determine the weights of each mutational signature contributing to an individual tumor sample
+b. Plot the reconstructed mutational profile (using the calculated weights) and compare to the original input sample
+
+### Download these packages to run deconstructSigs
+
+
+```{r}
+source("https://bioconductor.org/biocLite.R")
+biocLite("deconstructSigs")
+biocLite("BSgenome.Hsapiens.UCSC.hg19")
+biocLite("GenomeInfoDb")
+```
+
+### load packages previously installed
+
+```{r}
+library("deconstructSigs")
+library("BSgenome.Hsapiens.UCSC.hg19")
+library("GenomeInfoDb")
+library("tidyr")
+library("ggplot2")
+```
+
+Third, the most basic initial input to the deconstructSigs package consists of a data frame containing the mutational data for a tumor sample set. This structure must contain the genomic position and base change for each mutation, as well as a sample identifier. The output of wANNOVAR is used for this analysis.
+
+First column - Sample
+Second column - Chromosome
+Third column - Start
+Fourth column - Ref
+Fifth column - Alt
+
+### The file that use in this example you can download in "data"
+
+```{r}
+AllPatients <- read.csv("AllPatientsMutSig.csv", sep = ",", header = TRUE)
+head(AllPatients)
+```
+
+Using the function mut.to.sigs.input, the mutational data for a set of tumors is converted to an n-row and 96-columns data frame where n is the number of samples present. Each column respresents how frequently a mutation is found within each trinucleotide context.
+
+```{r}
+sigs.input <- mut.to.sigs.input(mut.ref = AllPatients, 
+                                sample.id = "Sample", 
+                                chr = "Chr", 
+                                pos = "Start", 
+                                ref = "Ref", 
+                                alt = "Alt")
+head(sigs.input)
+```
+
+Before do the loop, use unique to return a similar object but with the duplicate elements eliminated, also set the column that you use in loop
+
+```{r}
+x <-unique(AllPatients$Sample)
+x
+```
+
+
+The output from mut.to.sigs.input can then be used as input to whichSignatures. Alternatively, a user can generate their own input data frame using calculated mutation information for each trinucleotide context per sample.
+
+The function whichSignatures takes these two inputs (tumor.ref, signatures.ref) and uses an iterative approach to determine weights to assign to each signature in order to best recontruct the mutational profile of the input tumor sample. An additional parameter to whichSignatures will dictate how any further normalization is done. This parameter, tri.counts.method, is originally set to 'default', which does not result in further normalization.
+
+If tri.counts.method is set to 'exome', the input data frame is normalized by number of times each trinucleotide context is observed in the exome.
+
+### We make a loop to analyze all samples
+
+```{r}
+Bind_Signature<-c()
+for(i in x){
+    sample=i
+    a= whichSignatures(tumor.ref = sigs.input, 
+                              signatures.ref = signatures.cosmic, 
+                              sample.id = i, 
+                              contexts.needed = TRUE,
+                              tri.counts.method = 'exome')
+assign(i,a) # assign the name of the vector to the value obtained
+
+### With this script bind all sample in a data fame
+    
+results<-cbind(sample, a$weights, a$unknown)  
+    
+Bind_Signature<-rbind(Bind_Signature, results)
+row.names(Bind_Signature)<-NULL
+
+}
+
+### Sometimes this package doesn´t determine the weights the some samples and generate another column addition, we name it "unknown"
+colnames(Bind_Signature)[32]<-"unknown"
+Bind_Signature
+
+```
+
+### Now transform the data frame from wide to long format using tidyr
+
+```{r}
+tidy_Bind_Signature<-gather(Bind_Signature, key="Signature", value="valor", -sample)
+```
+
+### Can save the data frame generated in this analysis
+
+```{r}
+write.table(tidy_Bind_Signature, file= "pruebav.1.csv")
+```
+
+### Plot the data frame to view our results
+
+
+```{r}
+tidy_Bind_Signature <-tidy_Bind_Signature[-row(tidy_Bind_Signature)[tidy_Bind_Signature == 0],] ## To eliminate signature with value 0
+
+
+ggplot(tidy_Bind_Signature,aes(sample,Signature))+ geom_point(aes(size=valor,color=Signature)) +
+theme(axis.text.x = element_text(angle = 90, hjust = 1),panel.grid.major = element_line(colour = "gray"))+
+ylab("Signatures") + xlab("Sample") + theme(panel.background = element_blank()) + guides(fill = guide_legend(override.aes = list(color = NA)), color = FALSE) 
+```
+
+tidy_Bind_Signature <-tidy_Bind_Signature[-row(tidy_Bind_Signature)[tidy_Bind_Signature == 0],]
+
+Plot the data frame to view our results
+
+#library(ggplot2)
+ggplot(tidy_Bind_Signature,aes(sample,Signature))+ geom_point(aes(size=valor,color=Signature)) +
+theme(axis.text.x = element_text(angle = 90, hjust = 1),panel.grid.major = element_line(colour = "gray"))+
+ylab("Signatures")+ xlab("Sample") + theme(panel.background = element_blank())+
+  guides(fill = guide_legend(override.aes = list(color = NA)), 
+         color = FALSE) 
+
+
