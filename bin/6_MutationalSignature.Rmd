@@ -124,16 +124,3 @@ ggplot(tidy_Bind_Signature,aes(sample,Signature))+ geom_point(aes(size=valor,col
 theme(axis.text.x = element_text(angle = 90, hjust = 1),panel.grid.major = element_line(colour = "gray"))+
 ylab("Signatures") + xlab("Sample") + theme(panel.background = element_blank()) + guides(fill = guide_legend(override.aes = list(color = NA)), color = FALSE) 
 ```
-
-tidy_Bind_Signature <-tidy_Bind_Signature[-row(tidy_Bind_Signature)[tidy_Bind_Signature == 0],]
-
-Plot the data frame to view our results
-
-#library(ggplot2)
-ggplot(tidy_Bind_Signature,aes(sample,Signature))+ geom_point(aes(size=valor,color=Signature)) +
-theme(axis.text.x = element_text(angle = 90, hjust = 1),panel.grid.major = element_line(colour = "gray"))+
-ylab("Signatures")+ xlab("Sample") + theme(panel.background = element_blank())+
-  guides(fill = guide_legend(override.aes = list(color = NA)), 
-         color = FALSE) 
-
-
