@@ -12,6 +12,9 @@ The cancer is an evolutionary process of continuous Darwinian selection caused b
 
 To identify and quantify the prevalence of clonal mutation, pyclone assumes that **clonal population follow a perfect** (that is, no site mutation more than once in its evolutionary history, and each harbor at most one somatic mutation genotype) and **persistent** (mutations do not disappear or revert) **phylogeny**. These assumptions imply that clusters of mutations ocurring at the same point in the clonal phylogeny are present at shared cellular prevalence. Thus, clusters of mutations can be used as markers of clonal population.
 
+![CELLULAR_PREVALENCE](https://user-images.githubusercontent.com/53798505/68088323-b83fa500-fe23-11e9-808d-b00016d15952.png)
+
+
 The inputs to the model are a set of deeply sequenced mutations from one or more samples derived from a single patient and a measure of allele-specific copy number at each mutation locus in each sample.
 
 ![workflow](https://user-images.githubusercontent.com/53798505/68076144-9b00cd00-fd76-11e9-8d0b-463bc7ef44c3.png)
