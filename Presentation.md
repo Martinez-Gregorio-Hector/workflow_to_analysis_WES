@@ -20,9 +20,13 @@ The inputs to the model are a set of deeply sequenced mutations from one or more
 ![workflow](https://user-images.githubusercontent.com/53798505/68076144-9b00cd00-fd76-11e9-8d0b-463bc7ef44c3.png)
 
 The PyClone framework 
+
 First, it uses beta-binomial emission densities, which models data sets with more variance in allelic prevalence measurements more effectively than a binomial model. 
+
 Second, flexible prior probability estimates (‘priors’) of possible mutational genotypes are used, reflecting how allelic prevalence measurements are deterministically linked to zygosity and coincident copy-number variation events.
+
 Third, Bayesian nonparametric clustering is used to discover groupings of mutations and the number of groups simultaneously. This obviates fixing the number of groups a priori and allows for cellular prevalence estimates to reflect uncertainty in this parameter. 
+
 Fourth, multiple samples from the same cancer may be analyzed jointly to leverage the scenario in which clonal populations are shared across samples
 
 Example of paper Uluah et al. 2018
