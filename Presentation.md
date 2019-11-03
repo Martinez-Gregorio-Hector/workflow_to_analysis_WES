@@ -10,7 +10,7 @@ The cancer is an evolutionary process of continuous Darwinian selection caused b
 
 **Pyclone** is a hierarchical Bayes statistical model to identify and quantify clonal populations in tumors, which extends to modeling mutations measured in multiple samples from the same patients. **Pyclone uses the measured of allelic prevalence to estimate the proportion of tumor cells harboring a mutations.**
 
-To identify and quantify the prevalence of clonal mutation, pyclone assumes that **clonal population follow a perfect** (that is, no site mutatetions more than once in its evolutionary history, and each harbor at most one somatic mutation genotype) and **persistent** (mutations do not disappear or revert) **phylogeny**. These assumptions imply that clusters of mutations ocurring at the same point in the clonal phylogeny are present at shared cellular prevalence. Thus, clusters of mutations can be used as maskers of clonal population.
+To identify and quantify the prevalence of clonal mutation, pyclone assumes that **clonal population follow a perfect** (that is, no site mutation more than once in its evolutionary history, and each harbor at most one somatic mutation genotype) and **persistent** (mutations do not disappear or revert) **phylogeny**. These assumptions imply that clusters of mutations ocurring at the same point in the clonal phylogeny are present at shared cellular prevalence. Thus, clusters of mutations can be used as maskers of clonal population.
 
 The inputs to the model are a set of deeply sequenced mutations from one or more samples derived from a single patient and a measure of allele-specific copy number at each mutation locus in each sample.
 
