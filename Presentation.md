@@ -27,12 +27,6 @@ Fourth, multiple samples from the same cancer may be analyzed jointly to leverag
 
 Example of paper Uluah et al. 2018
 
-They used PyClone-beta-binomial model with all model’s parameter values set to recommended values 
-We set the cellular prevalence cut-off to 0.04 and 0.02 and compared it to CP cut-off of 0.05 to check if the seeding patterns are altered. 
-Regarding the number of iterations in MCMC, the following criterion was used. If the number of samples in patient were less than 5, 10000 iterations were used; if the number of samples in a patient were between 5 and 7, 15000 iterations were used; if the number of samples in a patient were between 7 and 10, 20000 iterations were used; and if the number of samples were more than 10, 50000 iterations were used. The first 25% percent iterations were thrown as burnin, thereafter every 10th sample was considered, i.e., a thinning value of 10 was used. To test convergence, we ran two independent PyClone analyses for each patient and compared the results. For patient 11, we found that using 15000 iterations for MCMC sampling were not enough for convergence. Subsequently, we used 30000 iterations and observed convergence.
-
-Workflow
-
 ![workflow_Uluah](https://user-images.githubusercontent.com/53798505/68076412-ae616780-fd79-11e9-8f55-4dca3dca4b26.png)
 
 ![Uluah_application](https://user-images.githubusercontent.com/53798505/68076464-71e23b80-fd7a-11e9-9123-3a0060b425c6.png)
