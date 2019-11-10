@@ -1,5 +1,8 @@
 # **Pipeline to analysis Whole-Exome Sequencing (WES)**
 
+El cáncer is a disease caused by genetic alterions either for single nucleotide variation (SNV) and/or copy number variation(CNV). This genetic alterations are detected using emerging technologies such as Next Generation Sequencing (NGS) with [panels of cancer](https://www.idtdna.com/pages/products/next-generation-sequencing/hybridization-capture/lockdown-panels/xgen-pan-cancer-panel), [exome] (https://www.agilent.com/en/promotions/sureselect-human-all-exon-v7) o [complete genome](https://www.agilent.com/cs/library/usermanuals/Public/G9682-90000.pdf). 
+
+
 The objective of this repository is show a workflow to analyze whole-exome sequencing using packages such as GATK4, mutect2, and CNVKit which are performed in bash and the other part in R to analyze mutagenic signatures and make heatmaps.
 
 This is the general workflow.
