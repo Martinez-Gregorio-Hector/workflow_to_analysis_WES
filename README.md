@@ -3,7 +3,7 @@
 Cancer is a disease caused by progressive acumulation of genetic alterations either for single nucleotide variation (SNV) and/or copy number variation(CNV). There are some mutations important during initiation, promotion, and progression in cancer. 
 However, it is important to identify these genetic alterations in cancer to understand the biology of the tumor as well as to identify genetic alterations that are of clinical importance either as a biomarker or as a therapeutic target.
 
-This genetic alterations are detected using emerging technologies such as Next Generation Sequencing (NGS) with [panels of cancer](https://www.idtdna.com/pages/products/next-generation-sequencing/hybridization-capture/lockdown-panels/xgen-pan-cancer-panel), (exomes) [https://www.agilent.com/en/promotions/sureselect-human-all-exon-v7] o [complete genome](https://www.agilent.com/cs/library/usermanuals/Public/G9682-90000.pdf). 
+This genetic alterations are detected using emerging technologies such as Next Generation Sequencing (NGS) with [panels of cancer](https://www.idtdna.com/pages/products/next-generation-sequencing/hybridization-capture/lockdown-panels/xgen-pan-cancer-panel), [exomes](https://www.agilent.com/en/promotions/sureselect-human-all-exon-v7) o [complete genome](https://www.agilent.com/cs/library/usermanuals/Public/G9682-90000.pdf). 
 
 
 The goal of this repository is show a workflow to analyze whole-exome sequencing (WES) using packages such as GATK4, mutect2, and CNVKit.
