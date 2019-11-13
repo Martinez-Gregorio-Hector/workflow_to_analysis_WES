@@ -2,14 +2,13 @@
 ## Once the software was downloaded and added on the PATH
 ## This script is used for data preprocessing and generates a bam file ready for variant calling. It contains 6 steps
 
-## ##### Your data could be organized in this form
+##### Your data could be organized in this form
 
-```
-  bin
-  data
-      01_fastq 
-      02_Sam 
-```
+## bin
+## data
+##    01_fastq
+##    02_Sam
+
 
 ## 1. SortSam
 # This tool sorts the input SAM or BAM file by coordinate, queryname (QNAME), or some other property of the SAM record.
