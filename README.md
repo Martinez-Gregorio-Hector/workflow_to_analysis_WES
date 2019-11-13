@@ -110,11 +110,6 @@ wget ftp://gsapubftp-anonymous@ftp.broadinstitute.org/bundle/hg19/ucsc.hg19.fast
   
   iv) [**CNVkit**](https://github.com/etal/cnvkit)
   
-  a) files.bed - provided by the vendor or your genes that you are analyzing
-
-b) access-5k-mappable.hg19.bed - is in the folder of data in cnvkit (cnvkit > data > access-5k-mappable.hg19.bed)
-
-c) refFlat.txt - download in http://hgdownload.cse.ucsc.edu/goldenPath/hg19/database/refFlat.txt.gz
   
 ***R***
  
