@@ -1,12 +1,12 @@
 ## Once the software was downloaded and added on the PATH follow this script 
+
 ##### Your data could be organized in this form
 
-```
-  bin
-  data
-      Tumoral ### Contains bams of tumoral samples
-      Normal  ### Contains bams of normal samples
-```
+## bin
+## data
+##    Tumoral   ### Contains bams of tumoral samples
+##    Normal    ### Contains bams of normal samples
+
 
 ## This script is to generate cns and cnr which is used to call somatic copy number variations (sCNV)
 
