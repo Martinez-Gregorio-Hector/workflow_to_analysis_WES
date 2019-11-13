@@ -63,14 +63,6 @@ These subdirectories contain scripts to analyze WES and is organized as follows.
 
 5_CNVkit.sh - Contains scripts to call somatic copy nucleótide variation (sCNV).
 
-To run this script we need the following files:
-
-a) files.bed - provided by the vendor or your genes that you are analyzing
-
-b) access-5k-mappable.hg19.bed - is in the folder of data in cnvkit (cnvkit > data > access-5k-mappable.hg19.bed)
-
-c) refFlat.txt - download in http://hgdownload.cse.ucsc.edu/goldenPath/hg19/database/refFlat.txt.gz
-
 6_MutationalSignature.rmd - Contains scripts to analyze mutational signature
 
 7_Heatmap.rmd - Contains scripts to plot variants and do heatmaps
@@ -117,6 +109,12 @@ wget ftp://gsapubftp-anonymous@ftp.broadinstitute.org/bundle/hg19/ucsc.hg19.fast
   iii) [**GATK4**](https://github.com/broadinstitute/gatk#running), this package contains [**Mutect2**](https://www.nature.com/articles/nbt.2514)
   
   iv) [**CNVkit**](https://github.com/etal/cnvkit)
+  
+  a) files.bed - provided by the vendor or your genes that you are analyzing
+
+b) access-5k-mappable.hg19.bed - is in the folder of data in cnvkit (cnvkit > data > access-5k-mappable.hg19.bed)
+
+c) refFlat.txt - download in http://hgdownload.cse.ucsc.edu/goldenPath/hg19/database/refFlat.txt.gz
   
 ***R***
  
