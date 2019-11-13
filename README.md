@@ -33,8 +33,11 @@ The repository is organized as follows
 |	            +-- 5_CNVkit.sh
 |	            +-- 6_MutationalSignature.rmd
 |	            +-- 7_Heatmap.rmd
+|	            +-- README.md
 |	+--data/
+|	            +-- HeatMap
 |	            +-- MutationalSignature
+|	            +-- VariantsToStack
 |	            +-- bam
 |	            +-- fastq
 |	            +-- sam
@@ -48,8 +51,8 @@ The repository is organized as follows
 
 * [**data**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data): This subdirectory contains data such MutationalSignature, bam, fastq, sam, and vcf files.
 
-* [**figure**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/figure): This subdirectory contains images of the R packages
-
+* [**figures**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/figures): This subdirectory contains images of the R packages
+                
 
 ## Requirements
 
