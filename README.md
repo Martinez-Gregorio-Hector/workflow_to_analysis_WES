@@ -53,7 +53,7 @@ The repository is organized as follows
 
 * [**data**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data): This subdirectory contains data such HeatMap, MutationalSignature, VariantsToStack, bam, fastq, sam, and vcf files.
 
-* [**figures**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/figures): This subdirectory contains images of the R packages
+* [**figures**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/figures): Figures performed in the R package
                 
 
 ## Requirements
