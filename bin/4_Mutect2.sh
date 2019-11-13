@@ -2,14 +2,12 @@
 ## Once the software was downloaded and added on the PATH you can follow this scripts
 ## This script is used for calling SNV using Mutect2 (inside in GATK)
 
-## ##### Your data could be organized in this form
+##### Your data could be organized in this form
 
-```
-  bin
-  data
-      01_fastq 
-      02_Sam 
-```
+## bin
+## data
+##    01_fastq
+##    02_Sam
 
 # This script is to call variants in mode tumor only
 
