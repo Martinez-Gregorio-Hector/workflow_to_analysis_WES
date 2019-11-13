@@ -5,6 +5,9 @@ output: html_document
 ---
 
 ### Install ComplexHeatmap with devtools
+
+### This command is only necessary when the script is run for the first time. If the package is installed, go to the following command "load the library"
+
 ```{r}
 library(devtools)
 install_github("jokergoo/ComplexHeatmap")
