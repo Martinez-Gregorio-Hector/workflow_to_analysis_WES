@@ -49,12 +49,16 @@ The repository is organized as follows
 |	+--README.md
 ```
 
-* [**bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin): Contains a **README** that explain how is organized the workflow and **script** to to analyze WES.
+* [**bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin): Contains a **README** that explain how is organized the workflow and **scripts** to analyze WES.
 
-Contains the script and a README 
-This subdirectory contains the scripts and a README that explain how is organized the workflow to analyze WES.
 
-* [**data**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data): This subdirectory contains data such HeatMap, MutationalSignature, VariantsToStack, bam, fastq, sam, and vcf files.
+* [**data**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data): This directory contains different types of files that are used to execute the scripts.
+1. The fastq file contains data of breast cancer patients that were sequenced by the Ilumina HiSeq 2500 team, this file is the starting format for executing the first two script, fastqc and alignment.
+2. The sam file is the result of the alignment that was generated from the fastq files and the input file for data preprocessing.
+3. The bam file is the result of the data preprocessing and the input file for the so-called single-nucleotide variants and the number of copies.
+4. The vcf file is the file that is obtained after the call of bases and that contains the information of the genetic alterations found in these patients.
+5. The HeatMap file contains the data to run the HeatMap script and generate figures with the mutations found in these patients.
+6. The MutationalSignature file contains data to run the 6_MutationalSignature.Rmd script and analyze mutagenic signatures to identify which mutagenic processes have operated in the life of these patients.
 
 * [**figures**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/figures): Figures performed in the R package
                 
