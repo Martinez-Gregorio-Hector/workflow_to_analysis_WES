@@ -9,6 +9,8 @@
 
 
 ## This script is to generate cns and cnr which is used to call somatic copy number variations (sCNV)
+## Exome_Probes.bed is provided by the vendor or your genes that you are analyzing
+## Access-5k-mappable.hg19.bed - is in the folder of data in cnvkit (cnvkit > data > access-5k-mappable.hg19.bed)
 
 mkdir ../data/results_cnvkit
 
