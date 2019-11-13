@@ -64,7 +64,16 @@ Before run these scripts, you need to download:
 
   i) [**Human GRCh37/hg19**](https://halvade.readthedocs.io/en/latest/contents/references.html)
   
-  ```wget ftp://gsapubftp-anonymous@ftp.broadinstitute.org/bundle/hg19/ucsc.hg19.fasta.gz ```
+```  
+# For download Human GRCh37/hg19 move to data directory. Once in data make a directory
+
+mkdir reference
+cd reference 
+
+# Once in reference, execute the following command.
+
+wget ftp://gsapubftp-anonymous@ftp.broadinstitute.org/bundle/hg19/ucsc.hg19.fasta.gz 
+```
  
   
 ### Software
