@@ -42,7 +42,7 @@ The repository is organized as follows
 |	            +-- fastq
 |	            +-- sam
 |	            +-- vcf
-|	+--figure/
+|	+--figures/
 |	            +--MutationalSignature.png
 |	            +--ComplexHeatmap.png
 ```
