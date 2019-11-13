@@ -49,7 +49,10 @@ The repository is organized as follows
 |	+--README.md
 ```
 
-* [**bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin): This subdirectory contains the scripts and a README that explain how is organized the workflow to analyze WES.
+* [**bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin): Contains a [README](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin) that explain how is organized the workflow and [script](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin) to to analyze WES.
+
+Contains the script and a README 
+This subdirectory contains the scripts and a README that explain how is organized the workflow to analyze WES.
 
 * [**data**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data): This subdirectory contains data such HeatMap, MutationalSignature, VariantsToStack, bam, fastq, sam, and vcf files.
 
