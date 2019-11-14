@@ -43,8 +43,8 @@ The repository is organized as follows
 |	            +-- sam
 |	            +-- vcf
 |	+--figures/
-|	            +--MutationalSignature.png
-|	            +--ComplexHeatmap.png
+|	            +-- Heatmap.pdf
+|	            +-- SignatureCancer.jpeg
 |	+--Presentation.md
 |	+--README.md
 ```
