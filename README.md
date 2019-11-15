@@ -53,9 +53,9 @@ The repository is organized as follows
 
 1_FastQC.sh - Contains scripts to evaluate the quality of the sequenced bases, the input for this scrit are [fastq file](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/fastq).
 
-2_Alignment.sh - Contains script to align the readings using the bwa mem algorithm.
+2_Alignment.sh - Contains script to align the readings using the bwa mem algorith, the input file for this scritp are [fastq file](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/fastq).
 
-3_PreprocesingGATK4.sh - Contains script to preprocessing of data and generate a bam ready to variants calling.
+3_PreprocesingGATK4.sh - Contains script to preprocessing of data and generate a bam ready to variants calling. The input for this script is the outpur of 2_Alignment.sh or [sam file](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/sam).
 
 4_Mutect2.sh - Contains scripts to call somatic single nucleótide variation (sSNV) using tumor only.
 
