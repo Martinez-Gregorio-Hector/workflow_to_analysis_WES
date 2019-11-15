@@ -55,15 +55,15 @@ The repository is organized as follows
 
 2_Alignment.sh - Contains script to align the readings using the bwa mem algorith, the input file for this scritp are [fastq file](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/fastq).
 
-3_PreprocesingGATK4.sh - Contains script to preprocessing of data and generate a bam ready to variants calling. The input for this script is the outpur of 2_Alignment.sh or [sam file](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/sam).
+3_PreprocesingGATK4.sh - Contains script to preprocessing of data and generate a bam ready to variants calling, the input for this script is the outpur of 2_Alignment.sh or [sam file](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/sam).
 
-4_Mutect2.sh - Contains scripts to call somatic single nucleótide variation (sSNV) using tumor only. The input for this script is the output of 3_PreprocesingGATK4.sh or [bam file](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/bam).
+4_Mutect2.sh - Contains scripts to call somatic single nucleótide variation (sSNV) using tumor only, the input for this script is the output of 3_PreprocesingGATK4.sh or [bam file](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/bam).
 
-5_CNVkit.sh - Contains scripts to call somatic copy nucleótide variation (sCNV). The input for this script are [bam file](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/bam).
+5_CNVkit.sh - Contains scripts to call somatic copy nucleótide variation (sCNV), the input for this script are [bam file](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/bam).
 
-6_MutationalSignature.rmd - Contains scripts to analyze mutational signature. An example file used for this analysis is in  [Mutational Signature](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/MutationalSignature).
+6_MutationalSignature.rmd - Contains scripts to analyze mutational signature, an example file used for this analysis is in  [Mutational Signature](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/MutationalSignature).
 
-7_Heatmap.rmd - Contains scripts to plot variants and do heatmaps. An example file used for this analysis is in  [HeatMap](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/HeatMap).
+7_Heatmap.rmd - Contains scripts to plot variants and do heatmaps, an example file used for this analysis is in  [HeatMap](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/HeatMap).
 
 * [**data**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data): This directory contains different types of files that are used to execute the scripts.
 1. The fastq file contains data of breast cancer patients that were sequenced by the Ilumina HiSeq 2500 team, this file is the starting format for executing the first two script, fastqc and alignment.
