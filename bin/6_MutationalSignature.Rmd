@@ -4,13 +4,13 @@ date: "20/10/2019"
 output: html_document
 ---
 
-Script to analyze deconstructSigs
+# Script to analyze deconstructSigs
 
-deconstructSigs aims to determine the contribution of known mutational processes to a tumor sample.
+# deconstructSigs aims to determine the contribution of known mutational processes to a tumor sample.
 
-By using deconstructSigs, one can:
-a. Determine the weights of each mutational signature contributing to an individual tumor sample
-b. Plot the reconstructed mutational profile (using the calculated weights) and compare to the original input sample
+# By using deconstructSigs, one can:
+# a. Determine the weights of each mutational signature contributing to an individual tumor sample
+# b. Plot the reconstructed mutational profile (using the calculated weights) and compare to the original input sample
 
 ### Download these packages to run deconstructSigs
 
@@ -32,7 +32,7 @@ library("tidyr")
 library("ggplot2")
 ```
 
-Third, the most basic initial input to the deconstructSigs package consists of a data frame containing the mutational data for a tumor sample set. This structure must contain the genomic position and base change for each mutation, as well as a sample identifier. The output of wANNOVAR is used for this analysis.
+# Third, the most basic initial input to the deconstructSigs package consists of a data frame containing the mutational data for a tumor sample set. This structure must contain the genomic position and base change for each mutation, as well as a sample identifier. The output of wANNOVAR is used for this analysis.
 
 First column - Sample
 Second column - Chromosome
@@ -47,7 +47,7 @@ AllPatients <- read.csv("AllPatientsMutSig.csv", sep = ",", header = TRUE)
 head(AllPatients)
 ```
 
-Using the function mut.to.sigs.input, the mutational data for a set of tumors is converted to an n-row and 96-columns data frame where n is the number of samples present. Each column respresents how frequently a mutation is found within each trinucleotide context.
+# Using the function mut.to.sigs.input, the mutational data for a set of tumors is converted to an n-row and 96-columns data frame where n is the number of samples present. Each column respresents how frequently a mutation is found within each trinucleotide context.
 
 ```{r}
 sigs.input <- mut.to.sigs.input(mut.ref = AllPatients, 
