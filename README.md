@@ -56,9 +56,9 @@ The repository is organized as follows
 
 2_Alignment.sh - Contains script to align the readings using the bwa mem algorithm, the input file for this scritp are [fastq file](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/fastq).
 
-3_PreprocesingGATK4.sh - Contains script to preprocessing of data and generate a bam ready to variants calling, the input for this script is the outpur of 2_Alignment.sh or [sam file](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/sam).
+3_PreprocesingGATK4.sh - Contains script to preprocessing of data and generate a bam ready to variants calling, the input for this script is the output of 2_Alignment.sh or [sam file](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/sam).
 
-4_Mutect2.sh - Contains scripts to call somatic single nucleótide variation (sSNV) using tumor only, the input for this script is the output of 3_PreprocesingGATK4.sh or [bam file](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/bam).
+4_Mutect2.sh - Contains scripts to call somatic single nucleotide variation (sSNV) using tumor only, the input for this script is the output of 3_PreprocesingGATK4.sh or [bam file](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/bam).
 
 5_CNVkit.sh - Contains scripts to call somatic copy nucleótide variation (sCNV), the input for this script are [bam file](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/bam).
 
