@@ -49,6 +49,7 @@ The repository is organized as follows
 |	+--README.md
 ```
 
+
 * [**bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin): Contains the scripts to analyze WES and they are sorted as follows:
 
 1_FastQC.sh - Contains scripts to evaluate the quality of the sequenced bases, the input file for this scrit are [fastq file](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/fastq).
