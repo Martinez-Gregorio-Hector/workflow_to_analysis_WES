@@ -67,8 +67,8 @@ The repository is organized as follows
 7_Heatmap.rmd - Contains scripts to plot variants and do heatmaps, an example file used for this analysis is in  [HeatMap](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/HeatMap).
 
 * [**data**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data): This directory contains different types of files that are used to execute the scripts.
-1. The fastq file contains data of breast cancer patients that were sequenced by the Ilumina HiSeq 2500 team, this file is the starting format for executing the first two script, fastqc and alignment.
-2. The sam file is the result of the alignment that was generated from the fastq files and the input file for data preprocessing.
+1. The fastq file contains data of breast cancer patients that were sequenced by the Ilumina HiSeq 2500 team, this file is the starting format for executing the first two script [1_FastQC.sh](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/blob/master/bin/1_FastQC.sh) and [2_Alignment.sh](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/blob/master/bin/2_Alignment.sh).
+2. The sam file is the result of the 2_Alignment.sh that was generated from the fastq files and the input file for data preprocessing.
 3. The bam file is the result of the data preprocessing and the input file for the so-called single-nucleotide variants and the number of copies.
 4. The vcf file is the file that is obtained after the call of bases and that contains the information of the genetic alterations found in these patients.
 5. The HeatMap file contains the data to run the HeatMap script and generate figures with the mutations found in these patients.
