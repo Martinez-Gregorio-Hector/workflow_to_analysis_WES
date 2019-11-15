@@ -49,11 +49,9 @@ The repository is organized as follows
 |	+--README.md
 ```
 
-* [**bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin): Contains a **README** that explain how is organized the workflow and **scripts** to analyze WES.
+* [**bin**](https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/bin): Contains the scripts to analyze WES andand they are sorted as follows
 
-These subdirectories contain scripts to analyze WES and is organized as follows. If you don´t have reads in fastq, sam, bam, and vcf files these could be downloaded here.
-
-1_FastQC.sh - Contains scripts to evaluate the quality of the sequenced bases.
+1_FastQC.sh - Contains scripts to evaluate the quality of the sequenced bases, the input for this scrit are (fastq file)[https://github.com/Martinez-Gregorio-Hector/workflow_to_analysis_WES/tree/master/data/fastq].
 
 2_Alignment.sh - Contains script to align the readings using the bwa mem algorithm.
 
