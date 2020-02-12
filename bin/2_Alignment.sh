@@ -1,5 +1,5 @@
 ######### Alignment ###########
-######### Code to aligned fastqc to sam ###
+######### Code to aligned fastq to sam ###
 
 # bwa mem -M -t 6 -R "@RG\tID:\tSM:\tPL:\tPU:\tLB:" [ref.fasta] readN.fastq > aligned.sam
 
