@@ -15,7 +15,7 @@
 
 tar -zxvf *.tar.gz # Extract the file in TumorN.fastq.tar.gz to generate files TumorN.fastq
 
-mkdir -p ../01_Sam # Make a directory when is saved the alignments
+mkdir -p ../01_Sam # Make a directory when is saved the aligned readings
 
 
 for prefix in $(ls *.fastq | rev | cut -c 7- | rev | uniq); do
